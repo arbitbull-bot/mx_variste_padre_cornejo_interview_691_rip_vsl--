@@ -1,0 +1,8 @@
+PASS: localStorage clickid; 0 history entries before gesture, 20 after gesture.
+PASS: one start event despite repeated clicks; event1 values 5 and 10.
+PASS: form hidden at 392.999 s, shown with event9 at 393 s; timer 05:00 to 00:00.
+PASS: all event3–event10 boundaries, no duplicate checkpoints after seeking, proxy and clickid correct.
+PASS: event1 stops at video end.
+PASS: Back opens back2 in iframe, retains campaign_id and correct clickid, stops tracking.
+PASS: iOS branch pushes history immediately; index.html URL resolves back2 correctly.
+PASS: main.js does not control video, show form early, or send tracking requests.

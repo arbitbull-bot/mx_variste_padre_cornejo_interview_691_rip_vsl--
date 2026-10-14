@@ -1,0 +1,6 @@
+PASS: index.html structure, forms, IDs, metadata, asset links.
+PASS: back2/index.html structure, forms, IDs, metadata, asset links.
+PASS: CSS brace balance and local CSS resource paths.
+PASS: A4 byte-for-byte; A5 exact except approved timing substitutions; A6 CSS byte-for-byte.
+PASS: JS syntax and legacy routing/pixel/artifact scan.
+PASS: matching product images and actual 1280x720 video poster.
