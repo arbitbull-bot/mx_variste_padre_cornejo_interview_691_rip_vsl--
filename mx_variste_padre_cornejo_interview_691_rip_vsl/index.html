@@ -1,0 +1,284 @@
+<?php include("../q.php"); ?>
+<!DOCTYPE html>
+<html lang="es-MX"><head>
+   <meta charset="utf-8">
+   <meta property="land" content="mx_variste_padre_cornejo_interview_691_rip_vsl">
+   
+   <meta name="al:web:should_fallback" content="true">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="format-detection" content="telephone=no">
+   
+   
+   <title>Investigación Exclusiva</title>
+   <link rel="shortcut icon" href="./images/prod.png" type="image/png">
+   <link rel="apple-touch-icon" href="./images/prod.png">
+   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="./css/hdr.css">
+      
+   <link rel="stylesheet" href="./css/player.css">
+   <link rel="stylesheet" href="./css/player-layout.css">
+   <script src="./js/back.js"></script>
+   <script>
+      document.addEventListener("DOMContentLoaded", function () {
+         var backUrl = new URL("./back2/", window.location.href);
+         backUrl.search = window.location.search;
+         backUrl.searchParams.set("clickid", phpClickId);
+         window.vitBack(backUrl.href, true);
+      });
+      var phpClickId = "<?php echo $binom_click_id ?: 'no_Id'; ?>";
+      if (phpClickId && phpClickId !== 'no_Id') {
+         localStorage.setItem('clickid', phpClickId);
+      }
+   </script>
+   <script src="./js/video.js"></script>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__title">
+            <h1 class="core-title">
+               <span style="color: #ff3640;">ENTREVISTA EXCLUSIVA:</span> una conversación sobre <span style="color: #ff3640;">las várices</span> y el cuidado de las piernas
+            </h1>
+         </div>
+      </header>
+      <main class="main">
+         <section class="section-video">
+            <div class="container">
+               <div id="container_video">
+                 <div id="play" onclick="playVideo()">
+                   <div>
+                     <h4>El video ya ha comenzado</h4>
+                     <h4>¡Haga clic para escuchar!</h4>
+                   </div>
+                 </div>
+                 <div class="spinner-container">
+                   <div class="spinner-sub-container">
+                     <div class="loading">El video se está cargando <span class="spinner"></span></div>
+                   </div>
+                 </div>
+                 <video id="video" muted="" playsinline="" webkit-playsinline="" poster="./images/poster.png">
+                   <source src="https://am.mediahostvtts.cc/17649.mp4" type="video/mp4" />
+                 </video>
+               </div>
+               <div id="progress-container" style="width:100%;background-color:#fff;height:10px;margin-top:20px;">
+                 <div id="progress-bar" style="width:0%;height:100%;background-color:red;"></div>
+               </div>
+            </div>
+         </section>
+         <section class="section-form" id="order">
+            <form action="<?php getRoutelink(); ?>" method="post" class="form">
+               <input type="hidden" name="subid5" value="main_vsl_form">
+               <input type="hidden" id="clickId" name="click_id" value="<?php print $binom_click_id; ?>">
+               <p class="form-title">
+                  <strong>¡DÉSE PRISA!</strong> Los paquetes promocionales terminarán pronto.
+               </p>
+               <p class="form-title">
+                  <strong>Actualización:</strong> solo quedan <span style="color: #ff3640;">17</span> unidades al día.
+               </p>
+               
+               <div class="wrap-prod-mobile">
+                  <img src="./images/prod.png" class="prod-form-img" alt="Producto Variste" loading="lazy">
+               </div>
+               
+               <p class="form-price"><strong>-75% DE DESCUENTO</strong></p>
+               <p class="form-price price-flex">
+                  <span style="text-decoration: line-through; color: #999;">2360 MXN</span>
+                  <strong><span style="color: #ff3640;">590 MXN</span></strong>
+               </p>
+               
+               <p class="termina-form">Termina en</p>
+               <p class="form-text"><span class="timer">05:00</span></p>
+
+               <select id="country_code_selector" name="country_selector">
+                  <option value="MX">Mexico</option>
+               </select>
+               
+               <p>Su nombre:</p>
+               <input type="text" placeholder="Nombre" name="name" required="" minlength="2" autocomplete="name">
+               
+               <p>Su número:</p>
+               <div class="input-container">
+                  <img src="./images/flag.png" alt="MX" loading="lazy">
+                  <input type="tel" placeholder="+52" name="phone" required="" minlength="8" maxlength="16" autocomplete="tel">
+               </div>
+               
+               <button class="btn-submit" type="submit">GUARDAR SOLICITUD</button>
+               
+               <div class="formFb__steps">
+                  <div class="formFb__step">
+                     <img src="./images/step1.png" alt="Paso 1" loading="lazy">
+                  </div>
+                  <div class="formFb__step--line"></div>
+                  <div class="formFb__step">
+                     <img src="./images/step2.png" alt="Paso 2" loading="lazy">
+                  </div>
+                  <div class="formFb__step--line"></div>
+                  <div class="formFb__step">
+                     <img src="./images/step3.png" alt="Paso 3" loading="lazy">
+                  </div>
+               </div>
+               
+               <p class="footer-title_form">*Este descuento para un paquete es válido al pedir un tratamiento</p>
+               
+
+            </form>
+         </section>
+         <div class="social-wrap">
+            <img src="./images/social.png" alt="Canales" loading="lazy" class="social-img">
+         </div>
+         <section class="section-coments">
+            <div class="container">
+               <div class="all-coments">
+                  <p class="text-all-coments">Comentarios</p>
+                  <hr>
+                  <div class="place-coment">
+                <div class="coment">
+                    <div class="info-coment">
+                        <p class="name-coment">Catalina Ramírez</p>
+                        <p class="text-coment">No me lo puedo creer. Mis piernas no sólo dejaron de hincharse sino que desaparecieron esas venas abultadas. Antes de este método, había probado muchas cremas y vendajes. Me ayudaban durante un tiempo, pero no sentí ninguna mejoría real, el varícoz volvía una y otra vez. Sin embargo, después de unos días usando este método, me despierto por la mañana sin poder creer cómo mis piernas se ven normales otra vez. ¡Eso ya es algo, muchas gracias!</p>
+                        <div class="all-buttons-coment">
+                            <div class="btn-react-coment">
+                                <p class="react-coment">Me gusta</p>
+                                <p class="react-coment">Responder</p>
+                                <p>8 min</p>
+                            </div>
+                            <div class="btn-like-coment">
+                                <img src="./images/likes.png" alt="likes" loading="lazy">
+                                <p>124</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="coment">
+                    <div class="info-coment">
+                        <p class="name-coment">Mariana Gómez</p>
+                        <p class="text-coment">Mi familia está extasiada porque he mejorado significativamente la circulación de mis piernas con la ayuda de usted doctora, muchas gracias.</p>
+                        <div class="all-buttons-coment">
+                            <div class="btn-react-coment">
+                                <p class="react-coment">Me gusta</p>
+                                <p class="react-coment">Responder</p>
+                                <p>5 min</p>
+                            </div>
+                            <div class="btn-like-coment">
+                                <img src="./images/likes.png" alt="likes" loading="lazy">
+                                <p>89</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="coment">
+                    <div class="info-coment">
+                        <p class="name-coment">Valentina Mejía</p>
+                        <p class="text-coment">Es una pena que alguien tenga que gastar su vida para ayudar a otros desconocidos a librarse del varícoz. Yo también tengo familia, tengo nietos. Y estoy inmensamente agradecida porque ahora puedo disfrutar de usar faldas sin vergüenza y caminar sin ese dolor de piernas cansadas.</p>
+                        <div class="all-buttons-coment">
+                            <div class="btn-react-coment">
+                                <p class="react-coment">Me gusta</p>
+                                <p class="react-coment">Responder</p>
+                                <p>3 min</p>
+                            </div>
+                            <div class="btn-like-coment">
+                                <img src="./images/likes.png" alt="likes" loading="lazy">
+                                <p>41</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="coment">
+                    <div class="info-coment">
+                        <p class="name-coment">Sofía Herrera</p>
+                        <p class="text-coment">¡Y mi médico no me ayudó con las venas varicosas! Pero después de un tiempo la hinchazón seguía ahí, constante y limitante para mi vida. Estudiaré su video doctora, pero parece que me está ayudando.</p>
+                        <div class="all-buttons-coment">
+                            <div class="btn-react-coment">
+                                <p class="react-coment">Me gusta</p>
+                                <p class="react-coment">Responder</p>
+                                <p>2 min</p>
+                            </div>
+                            <div class="btn-like-coment">
+                                <img src="./images/likes.png" alt="likes" loading="lazy">
+                                <p>40</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="coment">
+                    <div class="info-coment">
+                        <p class="name-coment">Isabella Sánchez</p>
+                        <p class="text-coment">Sólo han pasado 7 días desde que empecé a usar este método y es increíble, ya puedo estar de pie todo el día sin que me duelan las piernas, la hinchazón desapareció y esas venas feas ya casi no se ven. ¡No siento ese cansancio de antes! Después de todo, ya tengo setenta y ocho años.</p>
+                        <div class="all-buttons-coment">
+                            <div class="btn-react-coment">
+                                <p class="react-coment">Me gusta</p>
+                                <p class="react-coment">Responder</p>
+                                <p>2 min</p>
+                            </div>
+                            <div class="btn-like-coment">
+                                <img src="./images/likes.png" alt="likes" loading="lazy">
+                                <p>66</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="coment">
+                    <div class="info-coment">
+                        <p class="name-coment">Juanita Rodríguez</p>
+                        <p class="text-coment">Increíblemente mejoré la circulación de mis piernas en sólo diez días gracias a esta receta natural de la doctora.</p>
+                        <div class="all-buttons-coment">
+                            <div class="btn-react-coment">
+                                <p class="react-coment">Me gusta</p>
+                                <p class="react-coment">Responder</p>
+                                <p>1 min</p>
+                            </div>
+                            <div class="btn-like-coment">
+                                <img src="./images/likes.png" alt="likes" loading="lazy">
+                                <p>81</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="coment">
+                    <div class="info-coment">
+                        <p class="name-coment">Esperanza García</p>
+                        <p class="text-coment">¡Mi mamá tiene una nueva vida! Tiene 54 años y llevaba mucho tiempo sufriendo del varícoz, hinchazón en las piernas y dolor constante, así que estuve buscando un método para mejorar su circulación y todo fue infructuoso hasta que encontré este vídeo en Facebook. Ahora su vida ha cambiado.</p>
+                        <div class="all-buttons-coment">
+                            <div class="btn-react-coment">
+                                <p class="react-coment">Me gusta</p>
+                                <p class="react-coment">Responder</p>
+                                <p>1 min</p>
+                            </div>
+                            <div class="btn-like-coment">
+                                <img src="./images/likes.png" alt="likes" loading="lazy">
+                                <p>85</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="coment">
+                    <div class="info-coment">
+                        <p class="name-coment">Patricia Velasco</p>
+                        <p class="text-coment">Encontré este video hace una semana y ahora mi vida ha cambiado, mis venas varicosas y la hinchazón han desaparecido por completo, esto es increíble a mis 65 años.</p>
+                        <div class="all-buttons-coment">
+                            <div class="btn-react-coment">
+                                <p class="react-coment">Me gusta</p>
+                                <p class="react-coment">Responder</p>
+                                <p>1 min</p>
+                            </div>
+                            <div class="btn-like-coment">
+                                <img src="./images/likes.png" alt="likes" loading="lazy">
+                                <p>85</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                  </div>
+                  <p class="text-all-coments" style="color: #365899; background: transparent;">Debes iniciar sesión para comentar</p>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer"></footer>
+   </div>
+
+   <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+#container_video { background: #000; }
+#container_video video { aspect-ratio: 16 / 9; object-fit: contain; }
+#play > div { max-width: 90%; }
+#play h4 { font-size: clamp(.9rem, 3vw, 1.15rem); line-height: 1.45; }
+.loading { padding: 16px; text-align: center; }
+#progress-container { max-width: 720px; margin-left: auto; margin-right: auto; }
+#order input[type="hidden"] { display: none; }
+#order .input-container input[name="phone"] { padding-left: 44px; }
+#order .input-container img { transform: translateY(-50%); }
